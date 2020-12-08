@@ -1,0 +1,14 @@
+baseURL: "http://zhiva.be/"
+languageCode: "bg-bg"
+title: "Жива Мрежа"
+theme: "xmin"
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name: Начало
+      url: ""
+      weight: 1
