@@ -13,3 +13,15 @@ menu:
     - name: Начало
       url: ""
       weight: 1
+
+    - name: Добави услуга
+      url: "/добави"
+      weight: 2
+
+    - name: Цели
+      url: "/цели"
+      weight: 3
+
+    - name: Как работи
+      url: "/как-работи"
+      weight: 4
