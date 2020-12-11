@@ -25,3 +25,8 @@ menu:
     - name: Как работи
       url: "/как-работи"
       weight: 4
+
+params:
+  description: "Жива Мрежа Описание."
+  footer: Жива Мрежа | [Пиши ни](mailto:da@zhiva.be) | [Отворен код](https://github.com/zhiva-mrezha) 
+
