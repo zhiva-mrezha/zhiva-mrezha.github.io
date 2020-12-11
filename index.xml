@@ -1,9 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Жива Мрежа</title><link>http://zhiva.be/</link><description>Recent content on Жива Мрежа</description><generator>Hugo -- gohugo.io</generator><language>bg-bg</language><atom:link href="http://zhiva.be/index.xml" rel="self" type="application/rss+xml"/><item><title>Добави услуга</title><link>http://zhiva.be/%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://zhiva.be/%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8/</guid><description>Ако знаеш за услуга която ще спечели ако влезе в Жива Мрежа, пиши ни.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Жива Мрежа</title>
+    <link>http://zhiva.be/</link>
+    <description>Recent content on Жива Мрежа</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>bg-bg</language><atom:link href="http://zhiva.be/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Добави услуга</title>
+      <link>http://zhiva.be/%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zhiva.be/%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8/</guid>
+      <description>Ако знаеш за услуга която ще спечели ако влезе в Жива Мрежа, пиши ни.
 Ако си програмист и искаш да добавиш услугата си към Жива Мрежа, тогава направи 2 лесни стъпки:
-Пиши ни Направи OpenID Connect влизане във твоята услуга Жива Мрежа ползва Keycloak, решение с отворен код разработено от Red Hat. Някой от поддръжката на Жива Мрежа ще те добави там и ще ти даде два тайни низа за да въведеш в твоята услуга.</description></item><item><title>Как работи</title><link>http://zhiva.be/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://zhiva.be/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8/</guid><description>Жива Мрежа е с отворен код.
+ Пиши ни Направи OpenID Connect влизане във твоята услуга  Жива Мрежа ползва Keycloak, решение с отворен код разработено от Red Hat. Някой от поддръжката на Жива Мрежа ще те добави там и ще ти даде два тайни низа за да въведеш в твоята услуга.</description>
+    </item>
+    
+    <item>
+      <title>Как работи</title>
+      <link>http://zhiva.be/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zhiva.be/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8/</guid>
+      <description>Жива Мрежа е с отворен код.
 zhiva.be Този сайт е хостван на Github Pages и кода му е тук.
 Аз Услугата Аз е споделена идентичност на потребителите за всички услуги във жива мрежа.
 Състои се от Keycloak който се настройва от поддръжката на Жива Мрежа да си говори по OpenID Connect протокола със всички Живи услуги.
-Начина по който Keycloak се качва и настройва нашия сървър ползвайки Ansible е тук.</description></item><item><title>Цели</title><link>http://zhiva.be/%D1%86%D0%B5%D0%BB%D0%B8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://zhiva.be/%D1%86%D0%B5%D0%BB%D0%B8/</guid><description>От време на време се появяват програмисти и ентусиасти които с доброволното си време създават услуга, която да е в помощ на Общността. Това което се случва най-често с тези услуги е, че биват недооценени от потребителя и бързо изоставени от създателя им.
+Начина по който Keycloak се качва и настройва нашия сървър ползвайки Ansible е тук.</description>
+    </item>
+    
+    <item>
+      <title>Цели</title>
+      <link>http://zhiva.be/%D1%86%D0%B5%D0%BB%D0%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zhiva.be/%D1%86%D0%B5%D0%BB%D0%B8/</guid>
+      <description>От време на време се появяват програмисти и ентусиасти които с доброволното си време създават услуга, която да е в помощ на Общността. Това което се случва най-често с тези услуги е, че биват недооценени от потребителя и бързо изоставени от създателя им.
 Причините услугата да не привлече интереса на потребителя могат да бъдат:
-Трудна - нуждае се от разяснения, ново записване, нова парола, ново потвърдително е-писмо Скучна - дори да прави добре някои неща, не успява да задържи вниманието на потребителя (разпиляно покрай Facebook и подобни) Забравима - в началото запленен, потребителя във вихъра на ежедневието забравя за нея Жива Мрежа предлага обединение на всички услуги под един покрив, който предоставя:</description></item></channel></rss>
+ Трудна - нуждае се от разяснения, ново записване, нова парола, ново потвърдително е-писмо Скучна - дори да прави добре някои неща, не успява да задържи вниманието на потребителя (разпиляно покрай Facebook и подобни) Забравима - в началото запленен, потребителя във вихъра на ежедневието забравя за нея  Жива Мрежа предлага обединение на всички услуги под един покрив, който предоставя:</description>
+    </item>
+    
+  </channel>
+</rss>
