@@ -9,7 +9,7 @@ permalinks:
 
 menu:
   main:
-    - name: Начало
+    - name: Жива Мрежа
       url: ""
       weight: 1
 
