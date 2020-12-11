@@ -3,7 +3,7 @@ name: update website
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - master 
 
 jobs:
   deploy:
