@@ -13,17 +13,21 @@ menu:
       url: ""
       weight: 1
 
+    - name: Влез
+      url: "https://az.zhiva.be/auth/realms/zhiva-mrezha/account"
+      weight: 2
+
     - name: Добави услуга
       url: "/добави"
-      weight: 2
+      weight: 3
 
     - name: Цели
       url: "/цели"
-      weight: 3
+      weight: 4
 
     - name: Как работи
       url: "/как-работи"
-      weight: 4
+      weight: 5
 
 params:
   description: "Жива Мрежа Описание."
