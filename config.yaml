@@ -31,5 +31,5 @@ menu:
 
 params:
   description: "Жива Мрежа Описание."
-  footer: Жива Мрежа | [Пиши ни](mailto:da@zhiva.be) | [Отворен код](https://github.com/zhiva-mrezha) 
+  footer: Жива Мрежа | [Пиши ни](/пиши-ни) | [Отворен код](https://github.com/zhiva-mrezha) 
 
