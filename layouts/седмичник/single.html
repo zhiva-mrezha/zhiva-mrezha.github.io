@@ -1,0 +1,25 @@
+{{ partial "header_седмичник.html" . }}
+<main>
+<section id="main">
+<div class="article-meta">
+  <h1 id="title"><span class="title">{{ .Title }}</span></h1>
+</div>
+
+  <div>
+        <article id="content">
+           {{ .Content }}
+        </article>
+  </div>
+</section>
+<aside id="meta">
+    <div>
+        {{ with .PrevInSection }}
+          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+    </div>
+</aside>
+</main>
+{{ partial "footer_седмичник.html" . }}
