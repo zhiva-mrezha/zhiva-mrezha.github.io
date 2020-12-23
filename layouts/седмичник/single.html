@@ -2,7 +2,8 @@
 <main>
 <section id="main">
 <div class="article-meta">
-  <h1 id="title"><span class="title">{{ .Title }}</span></h1>
+  <h1 id="topic"><span class="topic">{{ $.Param "topic" }}</span></h2>
+  <h4 id="title"><span class="title">{{ .Title }}</span> - <span class="author"><a href="{{ $.Param "author.url" }}">{{ $.Param "author.name" }}</a> </span></h4>
 </div>
 
   <div>
