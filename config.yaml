@@ -32,3 +32,13 @@ menu:
 params:
   description: "Жива Мрежа Описание."
   footer: Жива Мрежа | [Пиши ни](/пиши-ни) | [Отворен код](https://github.com/zhiva-mrezha) 
+  services: 
+    - name: Облак
+      url: https://oblak.otselo.eu
+      description: "общностен календар, раздумка" 
+    - name: Аз
+      url: https://az.zhiva.be/auth/realms/zhiva-mrezha/account
+      description: "единно влизане като потребител за всички услуги от Жива Мрежа" 
+    - name: Седмичник
+      url: https://7.zhiva.be
+      description: "седмично е-писмо за случващото се в общността"

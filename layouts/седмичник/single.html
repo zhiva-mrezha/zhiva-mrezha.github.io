@@ -2,9 +2,19 @@
 <main>
 <section id="main">
 <div class="article-meta">
-  <h1 id="topic"><span class="topic">{{ $.Param "topic" }}</span></h2>
-  <h4 id="title"><span class="title">{{ .Title }}</span> - <span class="author"><a href="{{ $.Param "author.url" }}">{{ $.Param "author.name" }}</a> </span></h4>
+  <h1 id="title"><span class="title">{{ .Title }}</span></h2>
+  <h4 id="date">
+    <span class="date">
+      {{ partial "седмичник_дата" . }}
+    </span> от <span class="author"><a href="{{ $.Param "author.url" }}">{{ $.Param "author.name" }}</a> </span></h4>
+
 </div>
+
+<ul class="action">
+  {{ range first 1 $.Site.Params.services }}
+  Влез в <a href="{{.url}}">{{.name}}</a> за {{.description}}
+  {{ end }}
+</ul>
 
   <div>
         <article id="content">
@@ -23,4 +33,11 @@
     </div>
 </aside>
 </main>
+
+<ul class="action">
+  {{ range first 1 $.Site.Params.services }}
+  Влез в <a href="{{.url}}">{{.name}}</a> за {{.description}}
+  {{ end }}
+</ul>
+
 {{ partial "footer_седмичник.html" . }}
