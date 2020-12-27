@@ -36,9 +36,9 @@ params:
     - name: Облак
       url: https://oblak.otselo.eu
       description: "общностен календар, раздумка" 
+    - name: Седмичник
+      url: http://localhost:1313/%D1%81%D0%B5%D0%B4%D0%BC%D0%B8%D1%87%D0%BD%D0%B8%D0%BA/
+      description: "седмично е-писмо за случващото се в общността"
     - name: Аз
       url: https://az.zhiva.be/auth/realms/zhiva-mrezha/account
-      description: "единно влизане като потребител за всички услуги от Жива Мрежа" 
-    - name: Седмичник
-      url: https://7.zhiva.be
-      description: "седмично е-писмо за случващото се в общността"
+      description: "единно влизане като потребител за всички услуги от Жива Мрежа"

@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<h1>Седмичници </h1>
+
+<h2><div style="text-align:center; letter-spacing: 0.1em"><a href="https://7.zhiva.be">Запиши се</a></div></h2>
+
+{{ .Content }}
+
+<ul>
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+  {{ range (where $pages "Section" "!=" "") }}
+  <li>
+    {{ partial "седмичник_дата" . }}
+
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}
