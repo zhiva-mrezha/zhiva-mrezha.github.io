@@ -10,12 +10,6 @@
 
 </div>
 
-<ul class="action">
-  {{ range first 1 $.Site.Params.services }}
-  Влез в <a href="{{.url}}">{{.name}}</a> за {{.description}}
-  {{ end }}
-</ul>
-
   <div>
         <article id="content">
            {{ .Content }}
