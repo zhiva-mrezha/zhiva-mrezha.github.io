@@ -1,9 +1,7 @@
   <footer>
-  <ul class="menu">
     {{ range .Site.Menus.main }}
-    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+    <a href="{{ .URL | relURL }}">{{ .Name }}</a> | 
     {{ end }}
-  </ul>
   </footer>
   </body>
 </html>
