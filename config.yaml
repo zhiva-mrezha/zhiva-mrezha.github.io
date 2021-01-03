@@ -2,6 +2,7 @@ baseURL: "http://zhiva.be/"
 languageCode: "bg-bg"
 title: "Жива Мрежа"
 theme: "xmin"
+pluralizelisttitles: "false"
 
 permalinks:
   note: "/note/:year/:month/:day/:slug/"
@@ -36,9 +37,16 @@ params:
     - name: Облак
       url: https://oblak.otselo.eu
       description: "общностен календар, раздумка" 
+      weight: 2
     - name: Седмичник
-      url: http://localhost:1313/%D1%81%D0%B5%D0%B4%D0%BC%D0%B8%D1%87%D0%BD%D0%B8%D0%BA/
+      url: "/седмичник"
       description: "седмично е-писмо за случващото се в общността"
+      weight: 3
     - name: Аз
       url: https://az.zhiva.be/auth/realms/zhiva-mrezha/account
       description: "единно влизане като потребител за всички услуги от Жива Мрежа"
+      weight: 4
+    - name: Жива Утопия
+      url: https://utopiabg.life
+      description: "социално и икономическо просторанство с карта, събития, обяви, форум, направи си сам, личности"
+      weight: 1

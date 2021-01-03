@@ -1,7 +1,8 @@
 {{ partial "header_седмичник.html" . }}
 <main>
 <section id="main">
-<div class="article-meta">
+<img style="min-height: 420px" src="{{ .Param "изображение.връзка" }}" alt="{{ $.Param "изображение.име" }}">
+<div style="position:absolute; top: 0px; width: 790px; top: 15px; background: #eeed" class="article-meta">
   <h1 id="title"><span class="title">{{ .Title }}</span></h2>
   <h4 id="date">
     <span class="date">
@@ -12,24 +13,32 @@
 
   <div>
         <article id="content">
-           {{ .Content }}
+          {{ .Content }}
         </article>
   </div>
 </section>
 <aside id="meta">
     <div>
         {{ with .PrevInSection }}
-          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+        <div class="previous">
+          Виж предишния
+          {{ partial "седмичник_дата" .}}
+          <a href="{{.Permalink}}">{{ .Title }}</a>
+        </div>
         {{ end }}
         {{ with .NextInSection }}
-          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+        <div class="previous">
+          Виж следващия
+          {{ partial "седмичник_дата" .}}
+          <a href="{{.Permalink}}">{{ .Title }}</a>
+        </div>
         {{ end }}
     </div>
 </aside>
 </main>
 
 <ul class="action">
-  {{ range first 1 $.Site.Params.services }}
+  {{ with index $.Site.Params.services ($.Param "promote") }}
   Влез в <a href="{{.url}}">{{.name}}</a> за {{.description}}
   {{ end }}
 </ul>
