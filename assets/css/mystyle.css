@@ -1,0 +1,43 @@
+a {
+  color: darkgreen;
+}
+
+a:visited {
+  color: darkgreen;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+.author a {
+  text-decoration: none;
+}
+
+h1 a, h2 a, h3 a {
+  text-decoration: none;
+}
+
+.action {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.action {
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-size: 1.3em;
+} 
+
+.action a:hover {
+  cursor: pointer;
+}
+
+.previous {
+  font-style: italic;
+}

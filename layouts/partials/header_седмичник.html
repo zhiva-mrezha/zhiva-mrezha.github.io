@@ -4,9 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
-    <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
-    {{ partial "head_custom.html" . }}
+    {{ with resources.Get "css/style.css" | minify }}
+      <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
+    {{ with resources.Get "css/fonts.css" | minify }}
+      <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
+    {{ with resources.Get "css/mystyle.css" | minify }}
+      <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
   </head>
 
   <body>
