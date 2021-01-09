@@ -18,35 +18,43 @@ menu:
       url: "https://az.zhiva.be/auth/realms/zhiva-mrezha/account"
       weight: 2
 
+    - name: Седмичници
+      url: "/седмичник"
+      weight: 3
+
     - name: Добави услуга
       url: "/добави"
-      weight: 3
+      weight: 4
 
     - name: Цели
       url: "/цели"
-      weight: 4
+      weight: 5
 
     - name: Как работи
       url: "/как-работи"
-      weight: 5
+      weight: 6
 
 params:
-  description: "Жива Мрежа Описание."
+  description: "Обединение на всички услуги които са полезни на общността, както и седмичник да ни държи в крак с общностни събития и споделеното знание."
   footer: Жива Мрежа | [Пиши ни](/пиши-ни) | [Отворен код](https://github.com/zhiva-mrezha) 
   services: 
     - name: Облак
       url: https://oblak.otselo.eu
       description: "общностен календар, раздумка" 
-      weight: 2
+      weight: 3
     - name: Седмичник
       url: "/седмичник"
       description: "седмично е-писмо за случващото се в общността"
-      weight: 3
+      weight: 4
     - name: Аз
       url: https://az.zhiva.be/auth/realms/zhiva-mrezha/account
       description: "единно влизане като потребител за всички услуги от Жива Мрежа"
-      weight: 4
+      weight: 5
     - name: Жива Утопия
       url: https://utopiabg.life
       description: "социално и икономическо просторанство с карта, събития, обяви, форум, направи си сам, личности"
       weight: 1
+    - name: Синергийна Мандала За Интегрално Развитие
+      url: https://utopiabg.life
+      description: "хармоничен, природосъобразен, интелигентен, пълноценен, осъзнат и мирен живот"
+      weight: 2
