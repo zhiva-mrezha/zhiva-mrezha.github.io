@@ -1,0 +1,13 @@
+body {
+  width: 500px;
+}
+img {
+  min-width: 500px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#img-text {
+  margin: 0px;
+  background: #fff
+}

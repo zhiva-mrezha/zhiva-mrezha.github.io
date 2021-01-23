@@ -13,6 +13,10 @@
     {{ with resources.Get "css/mystyle.css" | minify }}
       <style>{{ .Content | safeCSS }}</style>
     {{ end }}
+    {{ with resources.Get "css/седмичник.css" | minify }}
+      <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
+
   </head>
 
   <body>

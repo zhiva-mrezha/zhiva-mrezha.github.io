@@ -1,19 +1,40 @@
 {{ partial "header_седмичник.html" . }}
 <main>
 <section id="main">
-<img style="min-height: 420px" src="{{ .Param "изображение.връзка" }}" alt="{{ $.Param "изображение.име" }}">
-<div style="position:absolute; top: 0px; width: 790px; top: 15px; background: #eeed" class="article-meta">
+<div id="img-text" class="article-meta">
   <h1 id="title"><span class="title">{{ .Title }}</span></h2>
   <h4 id="date">
     <span class="date">
       {{ partial "седмичник_дата" . }}
     </span> от <span class="author"><a href="{{ $.Param "author.url" }}">{{ $.Param "author.name" }}</a> </span></h4>
-
 </div>
+<img src="{{ .Param "изображение.връзка" }}" alt="{{ $.Param "изображение.име" }}">
 
   <div>
         <article id="content">
           {{ .Content }}
+          {{ range ($.Param "съдържание") }}
+          {{ with .заглавие }}
+          <h2>{{ . }}</h2>
+          {{ end }}
+          {{ with .подзаглавие }}
+          {{ . | markdownify }}
+          {{ end }}
+          <ul>
+          {{ range .съдържание }}
+              <li>{{ . | markdownify }}</li>
+          {{ end }}
+          </ul>
+          {{ if eq .заглавие "Какво се случва" }}
+          <p>
+          {{ markdownify "Виж [Общностния календар](https://oblak.otselo.eu/apps/calendar/p/6Fmi34fsk8did8Yb) за въведени от потребителите събития." }}
+          <br>
+          {{ markdownify "Знаеш за интересно събитие? [Въведи го](https://oblak.otselo.eu/apps/calendar/dayGridMonth/now#) (изисква влизане в Жива Мрежа) или го пусни във [Facebook групата Жива Мрежа](https://www.facebook.com/groups/718510265727972)."}}
+          </p>
+          {{ end }}
+          {{ end }}
+
+          <a href="{{ .Permalink }}">Сподели този седмичник</a>
         </article>
   </div>
 </section>
