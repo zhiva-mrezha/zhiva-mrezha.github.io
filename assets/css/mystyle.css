@@ -1,17 +1,17 @@
 a {
-  color: darkgreen; !important
+  color: darkgreen !important;
 }
 
 a:visited {
-  color: darkgreen; !important
+  color: darkgreen !important;
 }
 
 a:hover {
-  color: #000001; !important
+  color: #000001 !important;
 }
 
 a:active {
-  color: #000001; !important
+  color: #000001 !important;
 }
 
 .author a {
