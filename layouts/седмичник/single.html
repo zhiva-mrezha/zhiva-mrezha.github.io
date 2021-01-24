@@ -8,14 +8,16 @@
       {{ partial "седмичник_дата" . }}
     </span> от <span class="author"><a href="{{ $.Param "author.url" }}">{{ $.Param "author.name" }}</a> </span></h4>
 </div>
-<img src="{{ .Param "изображение.връзка" }}" alt="{{ $.Param "изображение.име" }}">
 
   <div>
         <article id="content">
-          {{ .Content }}
+          <i>{{ .Content }}</i>
+
+          <img src="{{ .Param "изображение.връзка" }}" alt="{{ $.Param "изображение.име" }}">
+
           {{ range ($.Param "съдържание") }}
           {{ with .заглавие }}
-          <h2>{{ . }}</h2>
+          <h4 id="{{ . | anchorize }}">{{ . }}</h4>
           {{ end }}
           {{ with .подзаглавие }}
           {{ . | markdownify }}
@@ -25,7 +27,7 @@
               <li>{{ . | markdownify }}</li>
           {{ end }}
           </ul>
-          {{ if eq .заглавие "Какво се случва" }}
+          {{ if eq (.заглавие | lower) "какво се случва" }}
           <p>
           {{ markdownify "Виж [Общностния календар](https://oblak.otselo.eu/apps/calendar/p/6Fmi34fsk8did8Yb) за въведени от потребителите събития." }}
           <br>

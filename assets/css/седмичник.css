@@ -11,3 +11,7 @@ img {
   margin: 0px;
   background: #fff
 }
+
+h4 {
+  text-transform: uppercase;
+}
