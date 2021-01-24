@@ -1,21 +1,22 @@
-a[href] {
-  color: darkgreen;
+a {
+  color: darkgreen; !important
 }
 
-a[href]:visited {
-  color: darkgreen;
+a:visited {
+  color: darkgreen; !important
 }
 
-a[href]:hover {
-  color: black;
+a:hover {
+  color: black; !important
 }
 
-a[href]:active {
-  color: black;
+a:active {
+  color: black; !important
 }
 
 .author a {
   text-decoration: none;
+  font-weight: normal;
 }
 
 h1 a, h2 a, h3 a {
