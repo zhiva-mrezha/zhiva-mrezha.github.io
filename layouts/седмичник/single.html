@@ -1,7 +1,7 @@
 {{ partial "header_седмичник.html" . }}
 <main>
 <section id="main">
-<div id="img-text" class="article-meta">
+<div class="article-meta">
   <h1 id="title"><span class="title">{{ .Title }}</span></h2>
   <h4 id="date">
     <span class="date">
@@ -13,7 +13,7 @@
         <article id="content">
           <i>{{ .Content }}</i>
 
-          <img src="{{ .Param "изображение.връзка" }}" alt="{{ $.Param "изображение.име" }}">
+          <img id="topic" src="{{ .Param "изображение.връзка" }}" alt="{{ $.Param "изображение.име" }}">
 
           {{ range ($.Param "съдържание") }}
           {{ with .заглавие }}

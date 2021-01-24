@@ -2,13 +2,13 @@
   width: 500px;
   margin: auto;
 }
-img {
+img#topic {
   min-width: 500px;
   margin: 0px;
   padding: 0px;
 }
 
-#img-text {
+.article-meta {
   margin: 0px;
   background: #fff
 }
