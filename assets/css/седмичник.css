@@ -20,3 +20,8 @@ img#topic {
 h4#date {
   margin-bottom: 0px;
 }
+
+ul {
+  margin: 0;
+  padding: 0 15px;
+}
