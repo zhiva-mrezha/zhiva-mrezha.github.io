@@ -1,16 +1,16 @@
-a {
+a[href] {
   color: darkgreen;
 }
 
-a:visited {
+a[href]:visited {
   color: darkgreen;
 }
 
-a:hover {
+a[href]:hover {
   color: black;
 }
 
-a:active {
+a[href]:active {
   color: black;
 }
 
