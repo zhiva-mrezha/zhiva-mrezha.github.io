@@ -7,11 +7,11 @@ a:visited {
 }
 
 a:hover {
-  color: black; !important
+  color: #000001; !important
 }
 
 a:active {
-  color: black; !important
+  color: #000001; !important
 }
 
 .author a {
