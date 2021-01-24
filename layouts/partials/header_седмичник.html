@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
-    {{ with resources.Get "css/style.css" | minify }}
-      <style>{{ .Content | safeCSS }}</style>
-    {{ end }}
-    {{ with resources.Get "css/fonts.css" | minify }}
-      <style>{{ .Content | safeCSS }}</style>
-    {{ end }}
-    {{ with resources.Get "css/mystyle.css" | minify }}
-      <style>{{ .Content | safeCSS }}</style>
-    {{ end }}
-    {{ with resources.Get "css/седмичник.css" | minify }}
-      <style>{{ .Content | safeCSS }}</style>
-    {{ end }}
+    <style>
+      {{ with resources.Get "css/style.css" | minify }}
+        {{ .Content | safeCSS }}
+      {{ end }}
+      {{ with resources.Get "css/fonts.css" | minify }}
+        {{ .Content | safeCSS }}
+      {{ end }}
+      {{ with resources.Get "css/mystyle.css" | minify }}
+        {{ .Content | safeCSS }}
+      {{ end }}
+      {{ with resources.Get "css/седмичник.css" | minify }}
+        {{ .Content | safeCSS }}
+      {{ end }}
+    </style>
 
   </head>
 
   <body>
+    <div id="body">

@@ -1,7 +1,10 @@
   <footer>
     {{ range .Site.Menus.main }}
+    {{ if ne .Name "Влез" }}
     <a href="{{ .URL | relURL }}">{{ .Name }}</a> | 
+    {{ end }}
     {{ end }}
   </footer>
   </body>
+  </div>
 </html>
